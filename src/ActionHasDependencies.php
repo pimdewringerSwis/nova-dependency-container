@@ -38,7 +38,7 @@ trait ActionHasDependencies
      * @param  \Laravel\Nova\Http\Requests\ActionRequest  $request
      * @return array
      */
-    public function validateFields(ActionRequest $request)
+    public function validateFields(ActionRequest $request): array
     {
         $fields = collect($this->fieldsForValidation($request));
 

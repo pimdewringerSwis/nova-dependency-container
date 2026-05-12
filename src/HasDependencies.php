@@ -15,7 +15,7 @@ trait HasDependencies
      * @param  NovaRequest  $request
      * @return FieldCollection
      */
-    public function availableFields(NovaRequest $request): FieldCollection
+    public function availableFields(NovaRequest $request)
     {
         $method = $this->fieldsMethod($request);
 
